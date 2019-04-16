@@ -1,13 +1,14 @@
 {
-  "name": "social-graphql",
+  "name": "apollo2-graphql-axios-crud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:api": "nodemon --exec 'babel-node index.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:api": "nodemon --exec 'babel-node index.js' --ignore db.json",
+    "dev:json": "json-server --watch db.json"
   },
-  "keywords": [],
+  "keywords": ["babel7","graphql","axios","json-server","apollo-server-2"],
   "author": "",
   "license": "ISC",
   "dependencies": {
